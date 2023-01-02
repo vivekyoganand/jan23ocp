@@ -1,0 +1,21 @@
+   1  top
+    2  yum install docker -y
+    3  systemctl start docker 
+    4  docker info | head
+    5  docker search rajanikanth
+    6  docker search vivekyoganand
+    7  docker pull vivekyoganand/nginxbebusy:firsttry
+    8  docker images
+    9  dockere container ls
+   10  docker container ls
+   11  docker images
+   12  docker container ls
+   13  docker run -itd --name webhostvivekyoganandjan -p 80:80 vivekyoganand/nginxbebusy:firsttry
+   14  docker container ls
+   15  curl locahost
+   16  curl localhost
+   17  docker container ls
+   18  docker images
+   19  e
+   20  docker pull nginx
+   21  docker run -itd --name webhostvivekyoganandjan01 -p 8080:80 nginx
