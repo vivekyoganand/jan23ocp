@@ -1,0 +1,35 @@
+465  oc new-app httpd 
+  466  oc get pods
+  467  oc new-project light
+  468  oc new-app --name xyz httpd
+  469  oc get pods
+  470  oc describe pod/xyz-7f49569698-sn2qv
+  471  history | grep -i service
+  472  oc get sa
+  473  oc create sa serviceeasy-sa
+  474  oc adm policy add-scc-to-user anyuid -z serviceeasy-sa
+  475  oc get deploy
+  476  oc set serviceaccount deployment/xyz serviceeasy-sa
+  477  oc get pods
+  478  oc set serviceaccount --help
+  479  oc get pods
+  480  oc describe pod/xyz-85b95d58d6-vv8bd | grep -i scc
+  481  oc new-project red
+  482  oc new-app nginx
+  483  oc get pods
+  484  oc new-app httpd
+  485  oc get pod
+  486  oc describe pod/httpd-86cc58f775-dgbfj | grep -i scc
+  487  vi scc_admin.yaml
+  488  whoami
+  489    490  oc get nodes
+  491  history | grep -i ssh
+  492
+  493  oc get nodes
+  494  oc debug node/master-1.vyoganan4.lab.upshift.rdu2.redhat.com
+  495  oc get clusteroperator
+  496  oc project news
+  497  oc get pods
+  498  oc get pods -o wide
+  499  oc rsh pod/jiomart-5b97c54d87-tjzhm
+  500  history
